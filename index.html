@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700;800&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Vite App</title>
+    <script
+      src="https://kit.fontawesome.com/94fd89b181.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      class="md:flex hidden justify-end w-full gap-10 h-16 bg-white border-solid border-b-2 border-gray-100 items-center"
+    >
+      <div class="group">
+        <i
+          class="fa-solid fa-magnifying-glass mr-1 text-gray-600 group-hover:text-color"
+        ></i
+        ><a class="text-gray-600 text-lg group-hover:text-color" href="#"
+          >Sök</a
+        >
+      </div>
+      <ul class="flex gap-10 text-lg mr-8 text-gray-600">
+        <li><a class="hover:text-color" href="#">Kundservice</a></li>
+        <li><a class="hover:text-color" href="#">Registrera dig</a></li>
+        <li><a class="hover:text-color" href="#">Logga in</a></li>
+      </ul>
+    </header>
+    <header
+      class="flex justify-between w-full h-16 text-gray-600 border-solid border-b-2 border-gray-100 items-center sticky top-0 z-50 bg-white bg-opacity-80"
+    >
+      <img
+        class="w-36 ml-8"
+        src="https://st2.zoom.us/static/6.3.17532/image/new/topNav/Zoom_logo.svg"
+        alt="Zoom-logotypen"
+      />
+      <span class="block md:hidden">
+        <i class="fa-solid fa-bars text-2xl text-gray-600 mr-8"></i>
+      </span>
+      <ul class="md:flex hidden gap-10 text-lg ml-[500px]">
+        <li><a class="hover:text-color" href="#">Produkter</a></li>
+        <li><a class="hover:text-color" href="#">Planer och priser</a></li>
+        <li><a class="hover:text-color" href="#">Kontakt</a></li>
+        <li><a class="hover:text-color" href="#">Hjälpmedel</a></li>
+      </ul>
+      <button
+        class="hidden md:block rounded-md p-2 h-14 bg-color text-white text-lg mr-8 hover:bg-blue-400"
+        type="button"
+      >
+        <i class="fa-solid fa-arrow-down mr-1"></i> Installera
+      </button>
+    </header>
+    <section class="flex w-full justify-start items-start h-[600px]">
+      <div>
+        <h1
+          class="text-5xl sm:text-6xl w-[400px] sm:w-[600px] text-gray-600 mt-28 ml-8 font-bold"
+        >
+          En plattform för
+          <span class="text-color">kommunikation utan gränser</span>
+        </h1>
+        <p class="w-[400px] sm:w-[600px] mt-10 ml-8 text-xl">
+          Sammanför team, omdefinera arbetsplater, engagera nya målgrupper och
+          möt dina kunder- allt på plattformen du känner till och älskar.
+        </p>
+        <button
+          class="rounded-md p-2 h-14 w-52 bg-color text-white text-lg mt-10 ml-8 hover:bg-blue-400"
+          type="button"
+        >
+          <i class="fa-solid fa-arrow-down mr-3"></i>Installera
+        </button>
+      </div>
+      <div class="flex relative">
+        <div
+          class="bg-blue-100 rounded-full absolute -z-10 w-[700px] h-[700px] right-24 top-4"
+        ></div>
+        <div
+          class="bg-gray-300 rounded-full absolute -z-10 w-[300px] h-[300px] -left-60 top-60"
+        ></div>
+        <div
+          class="bg-gray-400 rounded-full absolute -z-10 w-[200px] h-[200px] right-[60px]"
+        ></div>
+        <img
+          class="md:block hidden h-[400px] rounded-xl mt-12 ml-8"
+          src="images/women-zoom3.png"
+          alt="women in zoom call"
+        />
+
+        <img
+          class="md:block hidden h-[300px] ml-14 mt-56 rounded-xl"
+          src="images/student.png"
+          alt="students in zoom call"
+        />
+      </div>
+    </section>
+    <section
+      class="flex w-full justify-between items-start h-[700px] bg-black bg-opacity-5"
+    >
+      <div>
+        <div
+          class="bg-gray-600 w-80 h-36 hidden md:flex justify-center items-center rounded-tr-lg"
+        >
+          <img
+            class="bg-gray-600 text-gray-600 h-auto w-72"
+            src="https://st1.zoom.us/static/6.3.17532/image/home2/zoom-products.png"
+            alt="Zoom Unified Communication Platform"
+          />
+        </div>
+        <div>
+          <ul
+            class="h-[558px] w-64 md:w-80 bg-gray-100 flex justify-center items-start gap-20 flex-col border-r-2 border-gray-300"
+          >
+            <li>
+              <a
+                class="text-sm md:text-lg font-bold text-black p-4 rounded-3xl bg-blue-400 ml-3 border-solid border-2 border-color"
+                href="#"
+                >Verktyg i lärandet</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-sm md:text-lg font-bold text-gray-600 p-4 rounded-3xl hover:bg-blue-100 bg-white ml-3 border-solid border-2 border-gray-400 hover:border-color"
+                href="#"
+                >Möjliggör distansarbete</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-sm md:text-lg font-bold text-gray-600 p-4 rounded-3xl hover:bg-blue-100 bg-white ml-3 border-solid border-2 border-gray-400 hover:border-color"
+                href="#"
+                >Sammanför familj och vänner</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-sm md:text-lg font-bold text-gray-600 p-4 rounded-3xl hover:bg-blue-100 bg-white ml-3 border-solid border-2 border-gray-400 hover:border-color"
+                href="#"
+                >Virituella upplevelser</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex ml-8 mr-44 mt-24 relative z-30">
+        <div class="flex flex-col mt-24">
+          <h2 class="font-bold text-2xl mb-2">Verktyg i lärandet</h2>
+          <div>
+            <p class="w-[250px] md:w-[400px]">
+              Maximera ditt lärande med Zoom- det optimala verktyget för global
+              undervisning och samarbete. Upplev dynamiska virtuella möten och
+              skapa en engagerande inlärningsmiljö från vilken plats som helst.
+            </p>
+            <div class="flex gap-4">
+              <div class="flex flex-col gap-4 mt-8">
+                <div class="flex items-center gap-2">
+                  <svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.1113 17C34.1113 18.8179 33.9652 20.6005 33.686 22.3386C32.7618 28.0926 28.2039 32.6505 22.4499 33.5747C20.7117 33.8538 18.9291 34 17.1113 34C15.2935 34 13.5109 33.8538 11.7728 33.5747C6.01875 32.6505 1.46083 28.0926 0.53666 22.3386C0.257486 20.6005 0.111328 18.8179 0.111328 17C0.111328 15.1821 0.257486 13.3995 0.53666 11.6614C1.46083 5.90736 6.01875 1.3495 11.7728 0.425329C13.5109 0.146156 15.2935 0 17.1113 0C18.9291 0 20.7117 0.146156 22.4499 0.425329C28.2039 1.3495 32.7618 5.90736 33.686 11.6614C33.9652 13.3995 34.1113 15.1821 34.1113 17Z"
+                      fill="#0B5CFF"
+                    ></path>
+                    <path
+                      d="M34.1113 17C34.1113 18.8179 33.9652 20.6005 33.686 22.3386C32.7618 28.0926 28.2039 32.6505 22.4499 33.5747C20.7117 33.8538 18.9291 34 17.1113 34C15.2935 34 13.5109 33.8538 11.7728 33.5747C6.01875 32.6505 1.46083 28.0926 0.53666 22.3386C0.257486 20.6005 0.111328 18.8179 0.111328 17C0.111328 15.1821 0.257486 13.3995 0.53666 11.6614C1.46083 5.90736 6.01875 1.3495 11.7728 0.425329C13.5109 0.146156 15.2935 0 17.1113 0C18.9291 0 20.7117 0.146156 22.4499 0.425329C28.2039 1.3495 32.7618 5.90736 33.686 11.6614C33.9652 13.3995 34.1113 15.1821 34.1113 17Z"
+                      fill="url(#paint0_radial_5312_25321)"
+                    ></path>
+                    <path
+                      d="M34.1112 17C34.1112 18.8179 33.9651 20.6005 33.6859 22.3386C32.7617 28.0926 28.2038 32.6505 22.4498 33.5746C20.7116 33.8538 18.9291 34 17.1113 34C15.2935 34 13.5109 33.8538 11.7727 33.5746C6.01863 32.6505 1.46077 28.0926 0.536599 22.3386C0.257426 20.6004 0.111328 18.8179 0.111328 17C0.111328 15.1822 0.257426 13.3995 0.536599 11.6613C1.46083 5.90737 6.01869 1.34938 11.7727 0.425271C13.5109 0.146098 15.2934 0 17.1113 0C18.9291 0 20.7117 0.146098 22.4498 0.425271C28.2039 1.34938 32.7617 5.90737 33.6859 11.6613C33.9651 13.3995 34.1112 15.182 34.1112 17Z"
+                      fill="url(#paint1_radial_5312_25321)"
+                    ></path>
+                    <path
+                      d="M20.7556 21.2499C20.7556 22.2558 19.9401 23.0713 18.9342 23.0713H11.0413C9.02939 23.0713 7.39844 21.4404 7.39844 19.4285V12.7499C7.39844 11.744 8.21392 10.9285 9.21987 10.9285H17.1127C19.1246 10.9285 20.7556 12.5594 20.7556 14.5713V21.2499ZM25.3699 12.0212L22.6984 14.0248C22.2398 14.3688 21.9699 14.9086 21.9699 15.482L21.9699 18.5177C21.9699 19.091 22.2399 19.6308 22.6985 19.9748L25.3699 21.9784C25.9703 22.4286 26.827 22.0003 26.827 21.2498V12.7498C26.827 11.9993 25.9703 11.5709 25.3699 12.0212Z"
+                      fill="white"
+                    ></path>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_5312_25321"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17.1113 15.0244) scale(22.9205 19.1565)"
+                      >
+                        <stop
+                          offset="0.82"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="0.98" stop-color="#003CB3"></stop>
+                      </radialGradient>
+                      <radialGradient
+                        id="paint1_radial_5312_25321"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17.1113 18.9685) scale(22.9122 19.1496)"
+                      >
+                        <stop
+                          offset="0.8"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="1" stop-color="#71A5F1"></stop>
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                  <h3>Virituella möten</h3>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34 17C34 18.8179 33.8539 20.6005 33.5747 22.3386C32.6505 28.0926 28.0926 32.6505 22.3386 33.5747C20.6004 33.8538 18.8178 34 17 34C15.1822 34 13.3996 33.8538 11.6615 33.5747C5.90743 32.6505 1.3495 28.0926 0.425332 22.3386C0.146158 20.6005 0 18.8179 0 17C0 15.1821 0.146158 13.3995 0.425332 11.6614C1.3495 5.90736 5.90743 1.3495 11.6615 0.425329C13.3996 0.146156 15.1822 0 17 0C18.8178 0 20.6004 0.146156 22.3386 0.425329C28.0926 1.3495 32.6505 5.90736 33.5747 11.6614C33.8539 13.3995 34 15.1821 34 17Z"
+                      fill="#0B5CFF"
+                    ></path>
+                    <path
+                      d="M34 17C34 18.8179 33.8539 20.6005 33.5747 22.3386C32.6505 28.0926 28.0926 32.6505 22.3386 33.5747C20.6004 33.8538 18.8178 34 17 34C15.1822 34 13.3996 33.8538 11.6615 33.5747C5.90743 32.6505 1.3495 28.0926 0.425332 22.3386C0.146158 20.6005 0 18.8179 0 17C0 15.1821 0.146158 13.3995 0.425332 11.6614C1.3495 5.90736 5.90743 1.3495 11.6615 0.425329C13.3996 0.146156 15.1822 0 17 0C18.8178 0 20.6004 0.146156 22.3386 0.425329C28.0926 1.3495 32.6505 5.90736 33.5747 11.6614C33.8539 13.3995 34 15.1821 34 17Z"
+                      fill="url(#paint0_radial_5312_25324)"
+                    ></path>
+                    <path
+                      d="M33.9999 17C33.9999 18.8179 33.8537 20.6005 33.5746 22.3386C32.6503 28.0926 28.0925 32.6505 22.3384 33.5746C20.6003 33.8538 18.8177 34 16.9999 34C15.1822 34 13.3995 33.8538 11.6614 33.5746C5.9073 32.6505 1.34944 28.0926 0.425271 22.3386C0.146098 20.6004 0 18.8179 0 17C0 15.1822 0.146098 13.3995 0.425271 11.6613C1.3495 5.90737 5.90737 1.34938 11.6614 0.425271C13.3996 0.146098 15.1821 0 16.9999 0C18.8178 0 20.6004 0.146098 22.3384 0.425271C28.0925 1.34938 32.6504 5.90737 33.5746 11.6613C33.8537 13.3995 33.9999 15.182 33.9999 17Z"
+                      fill="url(#paint1_radial_5312_25324)"
+                    ></path>
+                    <path
+                      d="M17.7914 22.1135L16.2906 22.8639C15.6193 23.1995 15.6193 24.1574 16.2905 24.493L17.7914 25.2435C18.1286 25.4121 18.5005 25.5 18.8776 25.5H25.5014C26.172 25.5 26.7157 24.9563 26.7157 24.2857V23.0714C26.7157 22.4008 26.172 21.8571 25.5014 21.8571H18.8775C18.5005 21.8571 18.1286 21.9449 17.7914 22.1135ZM26.7157 12.1428V20.6419H18.8775C18.315 20.6419 17.7517 20.7749 17.2486 21.0263L15.7475 21.7769C15.0231 22.139 14.5729 22.8673 14.5728 23.6773V24.2857H9.71568C8.37444 24.2857 7.28711 23.1984 7.28711 21.8571V12.1428C7.28711 10.8015 8.37444 9.71423 9.71568 9.71423H24.2871C25.6284 9.71423 26.7157 10.8015 26.7157 12.1428Z"
+                      fill="white"
+                    ></path>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_5312_25324"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17 15.0244) scale(22.9205 19.1565)"
+                      >
+                        <stop
+                          offset="0.82"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="0.98" stop-color="#003CB3"></stop>
+                      </radialGradient>
+                      <radialGradient
+                        id="paint1_radial_5312_25324"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(16.9999 18.9685) scale(22.9122 19.1496)"
+                      >
+                        <stop
+                          offset="0.8"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="1" stop-color="#71A5F1"></stop>
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                  <h3>Whiteboard online</h3>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 mt-8">
+                <div class="flex items-center gap-2">
+                  <svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34 17C34 18.8179 33.8539 20.6005 33.5747 22.3386C32.6505 28.0927 28.0926 32.6505 22.3386 33.5747C20.6004 33.8539 18.8178 34 17 34C15.1822 34 13.3996 33.8539 11.6615 33.5747C5.90743 32.6505 1.3495 28.0927 0.425332 22.3386C0.146158 20.6005 0 18.8179 0 17C0 15.1821 0.146158 13.3995 0.425332 11.6614C1.3495 5.90737 5.90743 1.3495 11.6615 0.425329C13.3996 0.146156 15.1822 0 17 0C18.8178 0 20.6004 0.146156 22.3386 0.425329C28.0926 1.3495 32.6505 5.90737 33.5747 11.6614C33.8539 13.3995 34 15.1821 34 17Z"
+                      fill="#0B5CFF"
+                    ></path>
+                    <path
+                      d="M34 17C34 18.8179 33.8539 20.6005 33.5747 22.3386C32.6505 28.0927 28.0926 32.6505 22.3386 33.5747C20.6004 33.8539 18.8178 34 17 34C15.1822 34 13.3996 33.8539 11.6615 33.5747C5.90743 32.6505 1.3495 28.0927 0.425332 22.3386C0.146158 20.6005 0 18.8179 0 17C0 15.1821 0.146158 13.3995 0.425332 11.6614C1.3495 5.90737 5.90743 1.3495 11.6615 0.425329C13.3996 0.146156 15.1822 0 17 0C18.8178 0 20.6004 0.146156 22.3386 0.425329C28.0926 1.3495 32.6505 5.90737 33.5747 11.6614C33.8539 13.3995 34 15.1821 34 17Z"
+                      fill="url(#paint0_radial_5312_25338)"
+                    ></path>
+                    <path
+                      d="M33.9999 17C33.9999 18.8179 33.8537 20.6005 33.5746 22.3386C32.6503 28.0927 28.0925 32.6505 22.3384 33.5746C20.6003 33.8538 18.8177 34 16.9999 34C15.1822 34 13.3995 33.8538 11.6614 33.5746C5.90731 32.6505 1.34944 28.0927 0.425271 22.3386C0.146098 20.6004 0 18.8179 0 17C0 15.1822 0.146098 13.3995 0.425271 11.6613C1.3495 5.90737 5.90737 1.34938 11.6614 0.425271C13.3996 0.146098 15.1821 0 16.9999 0C18.8178 0 20.6004 0.146098 22.3384 0.425271C28.0925 1.34938 32.6504 5.90737 33.5746 11.6613C33.8537 13.3995 33.9999 15.182 33.9999 17Z"
+                      fill="url(#paint1_radial_5312_25338)"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24.2871 8.5H9.71568C8.37444 8.5 7.28711 9.58726 7.28711 10.9286V23.0714C7.28711 24.4126 8.37444 25.5 9.71568 25.5H24.2871C25.6284 25.5 26.7157 24.4126 26.7157 23.0714V10.9286C26.7157 9.58726 25.6284 8.5 24.2871 8.5ZM15.18 11.8393C15.18 11.3362 15.5878 10.9286 16.0907 10.9286H17.9121C18.415 10.9286 18.8228 11.3362 18.8228 11.8393V12.4464C18.8228 12.9494 18.415 13.3571 17.9121 13.3571H16.0907C15.5878 13.3571 15.18 12.9494 15.18 12.4464V11.8393ZM9.71568 11.8393C9.71568 11.3362 10.1235 10.9286 10.6264 10.9286H12.4478C12.9508 10.9286 13.3585 11.3362 13.3585 11.8393V12.4464C13.3585 12.9494 12.9508 13.3571 12.4478 13.3571H10.6264C10.1235 13.3571 9.71568 12.9494 9.71568 12.4464V11.8393ZM24.2871 22.1607C24.2871 22.6637 23.8793 23.0714 23.3764 23.0714H10.6264C10.1235 23.0714 9.71568 22.6637 9.71568 22.1607V15.4821C9.71568 14.9791 10.1235 14.5714 10.6264 14.5714H23.3764C23.8793 14.5714 24.2871 14.9791 24.2871 15.4821V22.1607ZM24.2871 12.4464C24.2871 12.9494 23.8793 13.3571 23.3764 13.3571H21.555C21.052 13.3571 20.6443 12.9494 20.6443 12.4464V11.8393C20.6443 11.3362 21.052 10.9286 21.555 10.9286H23.3764C23.8793 10.9286 24.2871 11.3362 24.2871 11.8393V12.4464Z"
+                      fill="white"
+                    ></path>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_5312_25338"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17 15.0244) scale(22.9205 19.1565)"
+                      >
+                        <stop
+                          offset="0.82"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="0.98" stop-color="#003CB3"></stop>
+                      </radialGradient>
+                      <radialGradient
+                        id="paint1_radial_5312_25338"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(16.9999 18.9685) scale(22.9122 19.1496)"
+                      >
+                        <stop
+                          offset="0.8"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="1" stop-color="#71A5F1"></stop>
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                  <h3>Lektioner online</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.1113 17C34.1113 18.8179 33.9652 20.6005 33.686 22.3386C32.7618 28.0926 28.2039 32.6505 22.4499 33.5747C20.7117 33.8538 18.9291 34 17.1113 34C15.2935 34 13.5109 33.8538 11.7728 33.5747C6.01875 32.6505 1.46083 28.0926 0.53666 22.3386C0.257486 20.6005 0.111328 18.8179 0.111328 17C0.111328 15.1821 0.257486 13.3995 0.53666 11.6614C1.46083 5.90736 6.01875 1.3495 11.7728 0.425329C13.5109 0.146156 15.2935 0 17.1113 0C18.9291 0 20.7117 0.146156 22.4499 0.425329C28.2039 1.3495 32.7618 5.90736 33.686 11.6614C33.9652 13.3995 34.1113 15.1821 34.1113 17Z"
+                      fill="#0B5CFF"
+                    ></path>
+                    <path
+                      d="M34.1113 17C34.1113 18.8179 33.9652 20.6005 33.686 22.3386C32.7618 28.0926 28.2039 32.6505 22.4499 33.5747C20.7117 33.8538 18.9291 34 17.1113 34C15.2935 34 13.5109 33.8538 11.7728 33.5747C6.01875 32.6505 1.46083 28.0926 0.53666 22.3386C0.257486 20.6005 0.111328 18.8179 0.111328 17C0.111328 15.1821 0.257486 13.3995 0.53666 11.6614C1.46083 5.90736 6.01875 1.3495 11.7728 0.425329C13.5109 0.146156 15.2935 0 17.1113 0C18.9291 0 20.7117 0.146156 22.4499 0.425329C28.2039 1.3495 32.7618 5.90736 33.686 11.6614C33.9652 13.3995 34.1113 15.1821 34.1113 17Z"
+                      fill="url(#paint0_radial_5312_25330)"
+                    ></path>
+                    <path
+                      d="M34.1112 17C34.1112 18.8179 33.9651 20.6005 33.6859 22.3386C32.7617 28.0926 28.2038 32.6505 22.4498 33.5746C20.7116 33.8538 18.9291 33.9999 17.1113 33.9999C15.2935 33.9999 13.5109 33.8538 11.7727 33.5746C6.01863 32.6505 1.46077 28.0926 0.536599 22.3386C0.257426 20.6004 0.111328 18.8179 0.111328 17C0.111328 15.1822 0.257426 13.3995 0.536599 11.6613C1.46083 5.90737 6.01869 1.34938 11.7727 0.425271C13.5109 0.146098 15.2934 0 17.1113 0C18.9291 0 20.7117 0.146098 22.4498 0.425271C28.2039 1.34938 32.7617 5.90737 33.6859 11.6613C33.9651 13.3995 34.1112 15.182 34.1112 17Z"
+                      fill="url(#paint1_radial_5312_25330)"
+                    ></path>
+                    <g clip-path="url(#clip0_5312_25330)">
+                      <path
+                        d="M25.0197 21.043L26.0977 25.3529C26.1795 25.6778 25.9815 26.0075 25.6559 26.0893C25.6067 26.1012 25.5569 26.1071 25.5083 26.1071C25.2362 26.1071 24.9889 25.9233 24.9201 25.647L23.8204 21.2499H21.3627C20.6933 21.2499 20.1484 21.7942 20.1484 22.4642V25.5C20.1484 25.8356 19.8769 26.1071 19.5413 26.1071C19.2057 26.1071 18.9341 25.8356 18.9341 25.5V22.4642C18.9341 21.1254 20.0233 20.0356 21.3627 20.0356H24.294C24.434 20.0356 24.5549 19.9419 24.5887 19.8067L25.631 15.6385C25.7117 15.3124 26.0425 15.1155 26.3668 15.1962C26.6923 15.278 26.8904 15.6077 26.8086 15.9326L25.7662 20.1008C25.6614 20.5209 25.3783 20.8446 25.0197 21.043ZM15.2913 22.4642V25.5C15.2913 25.8355 15.0197 26.1071 14.6842 26.1071C14.3486 26.1071 14.077 25.8355 14.077 25.5V22.4642C14.077 21.7942 13.5321 21.2499 12.8627 21.2499H10.4051L9.30529 25.647C9.23652 25.9233 8.98928 26.1071 8.71713 26.1071C8.66851 26.1071 8.61871 26.1012 8.5695 26.0893C8.244 26.0075 8.04596 25.6778 8.12778 25.3529L9.20576 21.0429C8.84712 20.8443 8.56401 20.5209 8.45922 20.1008L7.41689 15.9325C7.33507 15.6076 7.53309 15.278 7.85861 15.1961C8.18234 15.1167 8.51318 15.3123 8.5944 15.6384L9.63673 19.8067C9.67053 19.9419 9.79148 20.0356 9.9314 20.0356H12.8628C14.2021 20.0356 15.2913 21.1254 15.2913 22.4642ZM21.9699 7.89282H12.2556C10.9168 7.89282 9.827 8.9826 9.827 10.3214V15.1785C9.827 16.5173 10.9168 17.6071 12.2556 17.6071H21.9699C23.3087 17.6071 24.3984 16.5173 24.3984 15.1785V10.3214C24.3984 8.9826 23.3087 7.89282 21.9699 7.89282ZM17.1124 9.41097C18.0347 9.41097 18.7815 10.1586 18.7815 11.0805C18.7815 12.0027 18.0347 12.7503 17.1124 12.7503C16.1903 12.7503 15.4422 12.0027 15.4422 11.0805C15.4422 10.1586 16.1903 9.41097 17.1124 9.41097ZM19.2813 16.0895H14.9438C14.525 16.0895 14.0767 15.7157 14.0767 15.2546C14.0767 14.3327 15.3773 13.5851 17.1124 13.5851C18.8477 13.5851 20.1483 14.3327 20.1483 15.2546C20.1483 15.7157 19.7002 16.0895 19.2813 16.0895Z"
+                        fill="white"
+                      ></path>
+                    </g>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_5312_25330"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17.1113 15.0244) scale(22.9205 19.1565)"
+                      >
+                        <stop
+                          offset="0.82"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="0.98" stop-color="#003CB3"></stop>
+                      </radialGradient>
+                      <radialGradient
+                        id="paint1_radial_5312_25330"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(17.1113 18.9684) scale(22.9122 19.1496)"
+                      >
+                        <stop
+                          offset="0.8"
+                          stop-color="#0B5CFF"
+                          stop-opacity="0"
+                        ></stop>
+                        <stop offset="1" stop-color="#71A5F1"></stop>
+                      </radialGradient>
+                      <clipPath id="clip0_5312_25330">
+                        <rect
+                          width="21.8572"
+                          height="21.8571"
+                          fill="white"
+                          transform="translate(6.18359 6.07141)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <h3>Personliga möten</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-gray-400 hidden lg:block rounded-full absolute -z-10 w-[500px] h-[500px] right-[300px] top-2"
+        ></div>
+        <div class="absolute h-7 w-40 top-[550px] left-[300px]">
+          <span class="h-5 w-5 bg-blue-400 rounded-full inline-block"></span>
+          <span
+            class="h-4 w-4 bg-gray-400 rounded-full inline-block hover:bg-blue-400"
+          ></span>
+          <span
+            class="h-4 w-4 bg-gray-400 rounded-full inline-block hover:bg-blue-400"
+          ></span>
+          <span
+            class="h-4 w-4 bg-gray-400 rounded-full inline-block hover:bg-blue-400"
+          ></span>
+        </div>
+        <img
+          class="w-80 h-80 rounded-xl hidden md:block"
+          src="images/teacher-zoom.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="h-[370px] bg-gray-300 flex justify-center md:justify-end items-center relative"
+    >
+      <div class="w-[500px] absolute mr-20 hidden md:block">
+        <img src="images/zoom-rund.png" alt="" />
+      </div>
+      <div
+        class="flex justify-center items-start flex-col w-[800px] ml-8 md:mr-[600px] gap-y-[20px]"
+      >
+        <h2 class="font-bold text-4xl">Gör arbetet mindre arbetsamt</h2>
+        <p class="">
+          Kommunicera och samarbeta så att ni kan arbeta bättre ihop. Enkelt att
+          hantera och härligt att använda – Zoom driver den moderna
+          arbetsstyrkan.
+        </p>
+
+        <button
+          class="rounded-md p-2 h-10 bg-color text-white mr-8 hover:bg-blue-400"
+          type="button"
+        >
+          Upptäck möjligheterna
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
